@@ -4,6 +4,7 @@
 
  var geocoder;
  var map;
+ 
 
  function initialize() {
    geocoder = new google.maps.Geocoder();
@@ -20,19 +21,27 @@
    var address = $("input#new-location-name").val();
    geocoder.geocode( { 'address': address}, function(results, status) {
      if (status == google.maps.GeocoderStatus.OK) {
-       map.setCenter(results[0].geometry.location);
+      var location = results[0].geometry.location;
+      map.setCenter(location);
 
-       // Add marker
-       var marker = new google.maps.Marker({
-           map: map,
-           position: results[0].geometry.location
-       });
+      var formattedAddress = results[0].formatted_address;
 
-       // Add eventlistner to zoom 8x on click
-       marker.addListener('click', function() {
-        map.setZoom(8);
-        map.setCenter(marker.getPosition());
-       });
+      var contentString = "<div id='content'><h4>" + formattedAddress + "</h4><img class='streetview' src='https://maps.googleapis.com/maps/api/streetview?size=400x400&pano=" + formattedAddress + "&fov=120&heading=235&pitch=10&key=AIzaSyDyoP_3UjpK3YSJT8g6-ngD1WzFv1seqLY'></div>";
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      // Add marker
+      var marker = new google.maps.Marker({
+         map: map,
+         position: results[0].geometry.location
+      });
+
+      // Add eventlistner to zoom 8x on click
+      marker.addListener('click', function() {
+       infowindow.open(map, marker);
+      });
      } else {
        alert("Geocode was not successful for the following reason: " + status);
      }
