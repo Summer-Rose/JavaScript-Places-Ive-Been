@@ -3,3 +3,8 @@
   height: 400px;
   background-color: #CCC;
 }
+
+.streetview {
+  height: 100px;
+  width: 100px;
+}
