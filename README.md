@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Places I've Been
 
 ##### _Epicodus Week 7 JavaScript Week 1 Class Assignment, 21 September 2015_
@@ -8,17 +7,6 @@
 ## Description
 Track places you've visited with this web app. Each place you've visited will be pinned on the map!
 
-=======
-# Project Name
-
-##### _Project Purpose, date 2015_
-
-#### By **Names**
-
-## Description
-
-Description goes here
->>>>>>> b8f4555f9727adb7e50e4ba0c063aa3f0238e0e4
 
 ## Setup
 
@@ -28,7 +16,6 @@ Description goes here
 
 ## Technologies Used
 
-<<<<<<< HEAD
 * JavaScript, jQuery, Mocha.js, Chai.js
 * Google Maps Javascript API, Google Maps Geocoding API
 * HTML, CSS
@@ -36,16 +23,6 @@ Description goes here
 ### Legal
 
 Copyright (c) 2015 **Summer Brochtrup & Momo Ozawa**
-=======
-* JavaScript
-* jQuery
-* Mocha
-* Chai
-
-### Legal
-
-Copyright (c) 2015 **NAMES**
->>>>>>> b8f4555f9727adb7e50e4ba0c063aa3f0238e0e4
 
 This software is licensed under the MIT license.
 
