@@ -16,7 +16,9 @@ Track places you've visited with this web app. Each place you've visited will be
 
 ## Technologies Used
 
-* JavaScript, jQuery, Mocha.js, Chai.js, Google Maps Javascript API, Google Maps Geocoding API, HTML, CSS
+* JavaScript, jQuery, Mocha.js, Chai.js
+* Google Maps Javascript API, Google Maps Geocoding API
+* HTML, CSS
 
 ### Legal
 
