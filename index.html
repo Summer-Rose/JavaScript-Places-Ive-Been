@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/city.js"></script>
+    <title>TITLE GOES HERE</title>
+  </head>
+  <body onload="initialize()">
+    <h1>Map</h1>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+
+          <h2>Add a place:</h2>
+          <form id="new-spot">
+            <div class="form-group">
+              <label for="new-location-name">City and Region</label>
+              <input type="text" class="form-control" id="new-location-name" placeholder="Ex. Portland, OR" required>
+            </div>
+
+            <div class="form-group">
+              <label for="new-country-name">Country</label>
+              <input type="text" class="form-control" id="new-country-name" placeholder="Ex. US" required>
+            </div>
+
+            <button type="submit" class="btn" onclick="codeAddress()">Add</button>
+          </form>
+        </div>
+
+
+        <div class="col-md-6">
+          <div id="map"></div>
+        </div>
+      </div>
+  </body>
+</html>
+<!--signed_in=true&callback=addPinToMap-->
