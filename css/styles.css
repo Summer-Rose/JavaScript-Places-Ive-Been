@@ -4,6 +4,12 @@
   background-color: #CCC;
 }
 
+#pano {
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+}
+
 .streetview {
   height: 100px;
   width: 100px;
